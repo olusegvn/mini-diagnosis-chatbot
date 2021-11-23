@@ -1,0 +1,127 @@
+body{
+    background-color: black !important;
+}
+#reply{
+    background-color: white;
+    border: none;
+    width: 80%;
+    border-left: 1px solid black;
+    padding-left: 2%;
+    height: 30px;
+}
+.bot-body{
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: white;
+    padding: 2%;
+    border-radius: 25px;
+
+}
+
+.lower-class{
+    padding-top: 40%;
+}
+
+.button-text{
+    font-weight: 100;
+    font-size: 110%;
+    margin: auto;
+    padding-left: 2%;
+}
+
+#send-button{
+    width: 10%;
+    border: none;
+    display: inline-flex;
+}
+
+.speech-bubble {
+    width: 43%;
+	position: relative;
+	background: black;
+	border-radius: .9em;
+    animation-name: expand-bounce;
+    animation-duration: 0.5s;
+}
+.second-speech-bubble{
+    margin-top: 0.5%;
+}
+.speech-bubble p{
+    color: white;
+    display: inline-block;
+    max-width: 250px;
+    padding-left: 7%;
+    padding-top: 5%;
+    /*word-break: break-all; !* optional *!*/
+    font-size: 110%;
+    font-weight: 100;
+}
+
+.chat{
+    display: inline;
+}
+
+.me-chat{
+    background-color: gainsboro !important;
+    padding-left: 10%;
+}
+
+ #me-2{
+     background-color: gainsboro !important;
+     padding-left: 5% !important;
+     width: 20% !important;
+ }
+
+ #me-2 p{
+     color: black;
+    padding-right: 10%;
+ }
+.me-chat p{
+    color: black;
+    padding-right: 10%;
+    padding-left: 0%;
+}
+.chat img{
+    border-radius: 2em;
+    padding: 1%;
+    width: 45px;
+    height: 45px;
+}
+
+@keyframes expand-bounce {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#SpeechBubble::before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: -25px;
+  left: 5px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #5a5a5a transparent transparent #5a5a5a;
+  transform: rotate(10deg);
+}
+
+.quick-response-body {
+    float: right;
+    width: 13%;
+    margin: 0.5%;
+}
+
+.quick-response-button{
+    width: 100%;
+    margin-right: 100%;
+}
+.quick-response-button p{
+    text-align: center;
+}

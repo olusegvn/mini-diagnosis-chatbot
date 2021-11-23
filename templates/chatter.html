@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+</head>
+<body onload="init()">
+    <div class="bot-body col-6 h-75 pl-5 pr-5">
+        <div class="chat-body" id="chat-body">
+            <span class="chat">
+                <img src="{{url_for('static', filename='AI.jpg')}}" width="30" height="30"/>
+                <div class="speech-bubble">
+                    <p>Hi, I'm the Healtherman chatbot.</p>
+                </div>
+            </span>
+            <span class="chat">
+                <img src="{{url_for('static', filename='AI.jpg')}}" width="30" height="30"/>
+                <div class="speech-bubble">
+                    <p>I could help with a diagnosis if you are willing to answer a few questions.</p>
+                </div>
+            </span>
+        </div>
+{#            <div align="right">#}
+{#                    <div class="speech-bubble me-chat" style="text-align: left">#}
+{#                        <p>I do, but it seems mild.</p>#}
+{#                    </div>#}
+{#            </div>#}
+{#            <span class="chat">#}
+{#                <img src="{{url_for('static', filename='AI.jpg')}}" width="30" height="30"/>#}
+{#                <div class="speech-bubble">#}
+{#                    <p>Are you coughing?</p>#}
+{#                </div>#}
+{#            </span>#}
+{#            <div align="right">#}
+{#                    <div class="speech-bubble" id="me-2" style="text-align: left">#}
+{#                        <p>Yes, I am.</p>#}
+{#                    </div>#}
+{#            </div>#}
+        <div class="lower-class">
+            <input class="input-field-text" type="text" id="reply" name="reply" placeholder="reply here.">
+            <button id="send-button" type="submit" class="button-text">send</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="{{url_for('static', filename='js/jquery-3.5.1.min.js')}}"></script>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
+<script src="{{url_for('static', filename='js/math.min.js')}}"></script>
+
+{#<script>#}
+{#    alert('worked')#}
+{#</script>#}
